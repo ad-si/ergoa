@@ -1,31 +1,41 @@
 # ErgoA
 
-```sh
-git clone https://github.com/qmk/qmk_firmware
-cd qmk_firmware
+An optimized layout for speed, recallability and ergonomics.
+
+
+## Layers
+
+Undefined keys use the corresponding one of the base layer.
+
+Base
+```txt
+q w e r t   y u i o p
+a s d f g   h j k l ;
+b z x c v   n m , . /
 ```
 
-Building the ErgoA layout:
+Shift
+```txt
+Q W E R T   Y U I O P
+A S D F G   H J K L
+B Z X C V   N M
+```
 
-```sh
-mkdir ./keyboards/ergodox/keymaps/ergoa
-ln ~/Projects/ergoa/keymap.c keyboards/ergodox/keymaps/ergoa/keymap.c
-docker run \
-  -e keymap=ergoa \
-  -e keyboard=ergodox \
-  --rm -v $(pwd):/qmk:rw edasque/qmk_firmware
-open ./.build
+Symbols
+```txt
+! @ { } |   * = - _ +
+# $ ( ) ^   \ " ' ` :
+% & [ ]       ~ < > ?
 ```
 
 
-Building the experimental layout:
+## Development
 
-```sh
-mkdir./keyboards/ergodox/keymaps/ergoa-exp
-ln ~/Projects/ergoa/experimental.c keyboards/ergodox/keymaps/ergoa-exp/keymap.c
-docker run \
-  -e keymap=ergoa-exp \
-  -e keyboard=ergodox \
-  --rm -v $(pwd):/qmk:rw edasque/qmk_firmware
-open ./.build
-```
+Checkout the makefile on how to build the firmware.
+
+Finally use Teensy Loader to load the firmware onto the ErgoDox EZ.
+
+1. Drag and drop the `*.hex` file in the `.build-*` directory
+  onto the Teensy app
+1. Click reset button of ErgoDox EZ with long wire
+1. Press `Auto` in right corner of Teensy to upload the firmware
