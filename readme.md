@@ -45,12 +45,30 @@ Finally use Teensy Loader to load the firmware onto the ErgoDox EZ.
 ## Travel
 
 Reduced version for the
-[ErgoTravel](https://github.com/jpconstantineau/ErgoTravel) keyboard.
+[ErgoTravel](https://github.com/jpconstantineau/ErgoTravel) keyboard
+with 54 keys.
 
 
 ### Layers
 
-![ErgoA Travel Layout](./ergoa_travel_layout.png)
+#### Layer 0 - Base
+
+![Layer 0](ErgoTravel/layer_0.png)
+
+
+#### Layer 1 - Shift
+
+![Layer 1](ErgoTravel/layer_1.png)
+
+
+#### Layer 2 - Symbols
+
+![Layer 2](ErgoTravel/layer_2.png)
+
+
+#### Layer 3 - Motion & Numbers
+
+![Layer 3](ErgoTravel/layer_3.png)
 
 
 ### Development
