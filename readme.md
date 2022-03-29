@@ -3,7 +3,9 @@
 An optimized layout for speed, recallability and ergonomics.
 
 
-## Layers
+## Default
+
+### Layers
 
 Undefined keys use the corresponding one of the base layer.
 
@@ -28,8 +30,7 @@ Symbols
 % & [ ]       ~ < > ?
 ```
 
-
-## Development
+### Development
 
 Checkout the makefile on how to build the firmware.
 
@@ -39,3 +40,20 @@ Finally use Teensy Loader to load the firmware onto the ErgoDox EZ.
   onto the Teensy app
 1. Click reset button of ErgoDox EZ with long wire
 1. Press `Auto` in right corner of Teensy to upload the firmware
+
+
+## Travel
+
+Reduced version for the
+[ErgoTravel](https://github.com/jpconstantineau/ErgoTravel) keyboard.
+
+
+### Layers
+
+![ErgoA Travel Layout](./ergoa_travel_layout.png)
+
+
+### Development
+
+Use the [QMK Configurator](https://config.qmk.fm) for editing the
+include [layout file](./ergoa_travel.json).
