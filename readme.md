@@ -75,3 +75,13 @@ with 54 keys.
 
 Use the [QMK Configurator](https://config.qmk.fm) for editing the
 include [layout file](./ergoa_travel.json).
+
+
+## Keeb.io Iris Rev. 1
+
+Reduced version for the
+[Iris CE](https://keeb.io/products/iris-ce-keyboard) keyboard
+with 54 keys.
+
+Use [Via](https://usevia.app/) for editing the
+[layout file](./keebo_iris_ce_rev1.json).
